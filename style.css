@@ -1,0 +1,252 @@
+
+/* google fonts */
+.open-sans-inter {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+nav{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     list-style: none;
+
+}
+nav ul a{
+    text-decoration: none;
+}
+/* .banner-container */
+.banner-container {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.banner-h1{
+    font-size: 65px;
+    font-weight: bold;
+}
+.banner-h1 span{
+    color:#E95A08 ;
+
+}
+/* Plants section */
+.Plants{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.Plants-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.Plants-item>h1,p{
+    text-align: center;
+}
+.Plants-item>button{
+    width: 100%;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+.plants-title h1{
+    text-align: center;
+}
+.plants-title p{
+    text-align: center;
+    
+}
+.plants-title h1 span{
+    color: #E95A08;
+}
+/* Lover-container */
+.Lover{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+}
+.lover-position img{
+    width: 286px;
+}
+.lover-position{
+    position: absolute;
+    top: -150px;
+    left: 370px;
+}
+
+.Lover-container{
+    display: flex;
+    gap: 60px;
+    margin: 0 auto;
+}
+.Lover-item>h1{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.Lover-item ul li{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+/* LatestDeals*/
+ .LatestDeals{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+.deals-title{
+    margin: 0 auto;
+    width: 620px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+.deals-title h1{
+    text-align: center;
+}
+.LatestDeals-container{
+    /* width: 950px;  */
+    height: 323px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px; 
+}
+#item-1{
+    grid-column: span 2;
+    border-radius: 20px;
+}
+#item{
+    grid-column: span 3;
+    grid-row: span 2;
+    border-radius: 20px;
+}
+
+#item-3{
+    grid-column: span 2;
+    border-radius: 20px;
+}
+
+.LatestDeals-tiem-1{
+    background-image: url("./assets/deal-bloom.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+
+}
+.LatestDeals-tiem-2{
+    background-image: url("./assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+.LatestDeals-tiem-3{
+    background-image: url("./assets/deal-ana.png");
+    background-repeat: no-repeat;
+    color: white;
+    
+} 
+/* colorful Bunch */
+.colorful-Bunch{
+    background-image: url("./assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    margin: 0 auto; 
+    height: 533px;
+    
+    
+}
+.colorful-Bunch>h1{
+    text-align: center;
+    padding-top: 265px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.colorful-Bunch>form{
+    text-align: center;
+    width: 830px;
+    height: 50px; 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 290px;
+   
+}
+#email{
+    grid-column: span 3;
+    padding-left: 30px;
+    
+}
+#sub{
+    border: none;
+    background-color: #E95A08;
+    color: white;
+    text-align: center;
+}
+
+
+
+ /* media quari */
+ @media screen and (max-width:576px)
+  {
+    nav{
+        width: 395px;
+    }
+    .nav-list{
+        visibility: hidden;
+    }
+    .banner-container{
+        width: 395px;
+        flex-direction: column-reverse;
+        
+    }
+    .Plants-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .Lover-container{
+        flex-direction: column;
+    }
+    .lover-position{
+        visibility: hidden;
+    }
+    /* .colorful-Bunch */
+    .colorful-Bunch{
+        /* margin: 0 auto; */
+        /* max-width: 393px; */
+        height: 275px;
+        background-position: center;
+        background-size: cover;
+    }
+    .colorful-Bunch>form{
+        width: 321px;
+        height: 50px;
+        background-color: blue;
+    }
+    .colorful-Bunch>h1{
+        width: 235px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 130px;
+        padding-top: 100px;
+    }
+    .colorful-Bunch>form{
+        margin-left: 80px;
+    }
+
+
+
+ }
